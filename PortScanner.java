@@ -29,3 +29,6 @@ public class PortScanner {
             }
         }
 
+ System.out.println("\n✅ Scan complete.");
+    }
+}
