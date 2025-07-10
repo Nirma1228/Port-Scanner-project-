@@ -4,9 +4,9 @@ This is a basic Java-based Port Scanner that scans a given IP address or domain 
 
 ##  Features
 
-- Scan a custom range of ports
-- Detect open TCP ports
-- Console-based simple Java program
+- Scan a custom range of ports.
+- Detect open TCP ports.
+- Console-based simple Java program.
 
 ### 1. Compile:
 
