@@ -1,1 +1,20 @@
+# Ignore IDE settings (like IntelliJ or PyCharm)
+.idea/
+*.iml
+
+# Ignore compiled Java class files
+*.class
+
+# Ignore OS/system-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore log, backup, or temp files
+*.log
+*.tmp
+*.bak
+
+# Ignore build folders (if you later use Maven/Gradle)
+target/
+build/
 
