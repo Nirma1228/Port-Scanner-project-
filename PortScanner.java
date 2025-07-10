@@ -18,4 +18,14 @@ public class PortScanner {
 
      System.out.println("\n🔎 Scanning ports from " + startPort + " to " + endPort + " on " + host + "...\n");
 
-    
+     for (int port = startPort; port <= endPort; port++) {
+            try {
+                Socket socket = new Socket();
+                socket.connect(new InetSocketAddress(host, port), 200);
+                System.out.println("✅ Port " + port + " is OPEN");
+                socket.close();
+            } catch (IOException e) {
+                // Port is closed
+            }
+        }
+
