@@ -15,3 +15,7 @@ public class PortScanner {
 
     System.out.print("Enter end port: ");
         int endPort = scanner.nextInt();
+
+     System.out.println("\n🔎 Scanning ports from " + startPort + " to " + endPort + " on " + host + "...\n");
+
+    
