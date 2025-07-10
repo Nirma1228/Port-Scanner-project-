@@ -9,3 +9,6 @@ public class PortScanner {
 
  System.out.print("Enter target IP or domain: ");
         String host = scanner.nextLine();
+
+    System.out.print("Enter start port: ");
+        int startPort = scanner.nextInt();
