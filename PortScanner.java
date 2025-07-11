@@ -38,9 +38,7 @@ public class PortScanner {
                     System.out.println("❌ Port " + finalPort + " is closed");
                 }
                 // Port is closed
-            }
+            }).start();
         }
-
- System.out.println("\n✅ Scan complete.");
     }
 }
