@@ -19,6 +19,12 @@ public class PortScanner {
         int endPort = scanner.nextInt();
 
         InetAddress inetAddress;
+        try {
+            inetAddress = InetAddress.getByName(host);
+        } catch (UnknownHostException e) {
+            System.out.println("❌ Invalid host.");
+            return;
+        }
 
      System.out.println("\n🔎 Scanning ports from " + startPort + " to " + endPort + " on " + host + "...\n");
 
