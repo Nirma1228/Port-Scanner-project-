@@ -26,7 +26,7 @@ public class PortScanner {
             return;
         }
 
-     System.out.println("\n🔎 Scanning ports from " + startPort + " to " + endPort + " on " + host + "...\n");
+     System.out.println("🔍 Scanning " + inetAddress.getHostAddress() + " from port " + startPort + " to " + endPort);
 
      for (int port = startPort; port <= endPort; port++) {
             try {
