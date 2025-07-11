@@ -29,6 +29,8 @@ public class PortScanner {
      System.out.println("🔍 Scanning " + inetAddress.getHostAddress() + " from port " + startPort + " to " + endPort);
 
      for (int port = startPort; port <= endPort; port++) {
+         int finalPort = port;
+            new Thread(() -> {
             try {
                 Socket socket = new Socket();
                 socket.connect(new InetSocketAddress(host, port), 200);
