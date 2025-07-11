@@ -18,5 +18,5 @@ This is a basic Java-based Port Scanner that that detects open ports, identifies
 2. **Compile the Program**
    javac PortScanner.java
    
-3. **Run the Scanner
+3. **Run the Scanner**
    java PortScanner
