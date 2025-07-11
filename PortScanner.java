@@ -33,9 +33,10 @@ public class PortScanner {
             new Thread(() -> {
             try (Socket socket = new Socket()){
                socket.connect(new InetSocketAddress(inetAddress, finalPort), 1000);
-                System.out.println("✅ Port " + port + " is OPEN");
-                socket.close();
-            } catch (IOException e) {
+               System.out.println("✅ Port " + finalPort + " is open");
+                } catch (IOException e) {
+                    System.out.println("❌ Port " + finalPort + " is closed");
+                }
                 // Port is closed
             }
         }
