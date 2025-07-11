@@ -32,7 +32,7 @@ public class PortScanner {
          int finalPort = port;
             new Thread(() -> {
             try (Socket socket = new Socket()){
-               socket.connect(new InetSocketAddress(host, port), 200);
+               socket.connect(new InetSocketAddress(inetAddress, finalPort), 1000);
                 System.out.println("✅ Port " + port + " is OPEN");
                 socket.close();
             } catch (IOException e) {
