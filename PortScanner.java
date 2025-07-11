@@ -31,9 +31,7 @@ public class PortScanner {
      for (int port = startPort; port <= endPort; port++) {
          int finalPort = port;
             new Thread(() -> {
-            try {
-                Socket socket = new Socket();
-                socket.connect(new InetSocketAddress(host, port), 200);
+            try (socket.connect(new InetSocketAddress(host, port), 200);
                 System.out.println("✅ Port " + port + " is OPEN");
                 socket.close();
             } catch (IOException e) {
