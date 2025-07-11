@@ -1,20 +1,37 @@
-# Ignore IDE settings (like IntelliJ or PyCharm)
-.idea/
-*.iml
-
 # Ignore compiled Java class files
 *.class
 
-# Ignore OS/system-specific files
-.DS_Store
-Thumbs.db
-
-# Ignore log, backup, or temp files
+# Ignore log files
 *.log
-*.tmp
-*.bak
 
-# Ignore build folders (if you later use Maven/Gradle)
-target/
+# Ignore IDE-specific files
+# IntelliJ
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# NetBeans
+nbproject/private/
 build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
 
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
+
+# Ignore OS-generated files
+.DS_Store        # macOS
+Thumbs.db        # Windows
+
+# Ignore backup and temp files
+*~
+*.swp
+*.bak
+*.tmp
