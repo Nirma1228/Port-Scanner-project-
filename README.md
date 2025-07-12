@@ -21,5 +21,6 @@ This is a basic Java-based Port Scanner that that detects open ports, identifies
 3. **Run the Scanner**
    java PortScanner
 
-**screenshot**
+## screenshot
+
 ![WhatsApp Image 2025-07-11 at 21 47 05_43756a1a](https://github.com/user-attachments/assets/c7109cc1-1e6e-48c6-9630-1862c2882b1c)
